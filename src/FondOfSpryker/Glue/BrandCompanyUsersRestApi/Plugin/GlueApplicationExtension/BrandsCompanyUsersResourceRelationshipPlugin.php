@@ -13,14 +13,14 @@ use Spryker\Glue\Kernel\AbstractPlugin;
 class BrandsCompanyUsersResourceRelationshipPlugin extends AbstractPlugin implements ResourceRelationshipPluginInterface
 {
     /**
+     * {@inheritDoc}
+     *
+     * @api
+     *
      * @param \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface[] $resources
      * @param \Spryker\Glue\GlueApplication\Rest\Request\Data\RestRequestInterface $restRequest
      *
      * @return void
-     * @api
-     *
-     * {@inheritdoc}
-     *
      */
     public function addResourceRelationships(array $resources, RestRequestInterface $restRequest): void
     {
@@ -29,11 +29,11 @@ class BrandsCompanyUsersResourceRelationshipPlugin extends AbstractPlugin implem
     }
 
     /**
-     * @return string
+     * {@inheritDoc}
+     *
      * @api
      *
-     * {@inheritdoc}
-     *
+     * @return string
      */
     public function getRelationshipResourceType(): string
     {
